@@ -7,7 +7,7 @@ getgenv().DNS = {
         Main = {
             Enabled = true,
             Mode = "Target",
-            Toggle = "Q",
+            Toggle = "L",
             Prediction = 0.11061,
             Parts = {"Head","LowerTorso","UpperTorso"}
         },
@@ -22,8 +22,8 @@ getgenv().DNS = {
     Camlock = {
         Main = {
             Enabled = true,
-            Key = "M",
-            UnlockKey = "N",
+            Key = "Q",
+            UnlockKey = "E",
             SmoothLock = true,
             Smoothness = 0.0312,
             PredictMovement = true,
@@ -71,7 +71,7 @@ getgenv().DNS = {
     Key360 = {
         Toggle = false,
         RotationSpeed = 2500, -- higher you go the faster the spin. 2500 is good
-        Keybind = Enum.KeyCode.V
+        Keybind = Enum.KeyCode.L
     },
 }
 
@@ -180,7 +180,7 @@ local c = ws.CurrentCamera
 -- // Notification Function
 local function SendNotification(text)
     Notification:Notify(
-        {Title = "DNS Rewrite", Description = "pl#0001 - "..text},
+        {Title = "Truezeus lock", Description = "skrix#4050 - "..text},
         {OutlineColor = Color3.fromRGB(50,76,110),Time = 2, Type = "image"},
         {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(50,76,110)}
     )
@@ -188,9 +188,9 @@ end
 
 -- // Call notification function
 if uwuMain.Notifications then
-    SendNotification("pl#0001 - injecting DNS Rewrite")
+    SendNotification("skrix#4050 - injecting Truezeus lock")
     wait(3.5)
-    SendNotification("pl#0001 - finished injecting DNS Rewrite")
+    SendNotification("skrix#4050 - finished injecting Truezeus lock")
 end
 
 -- // Camlock FOV
